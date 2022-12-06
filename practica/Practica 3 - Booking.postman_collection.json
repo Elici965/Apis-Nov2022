@@ -27,7 +27,16 @@
 							"pm.test(\"Validar que el status response es igual a Created.\",()=> {\r",
 							"    pm.response.to.have.status(\"Created\")\r",
 							"});\r",
-							""
+							"\r",
+							"pm.test(\"Validar que el body no viene vacio\", function(){\r",
+							"    pm.expect(pm.response.body).not.equal(null);\r",
+							"    pm.expect(pm.response.body).not.to.be.null;\r",
+							"})\r",
+							"\r",
+							"//Prueba para validar el estado de respuesta\r",
+							"pm.test(\"Validar que el response contenga Created.\",()=> {\r",
+							"   pm.expect(pm.response.text()).contain(\"Created\")\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -113,6 +122,9 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
 			"request": {
 				"method": "POST",
 				"header": [
@@ -210,6 +222,9 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -264,6 +279,11 @@
 							"pm.test(\"Validar que el body no viene vacio\", function(){\r",
 							"    pm.expect(pm.response.body).not.equal(null);\r",
 							"    pm.expect(pm.response.body).not.to.be.null;\r",
+							"})\r",
+							"\r",
+							"var name = pm.environment.get(\"nombre\")\r",
+							"pm.test(\"Validar que el nombre de la reserva es igual a la variable\",function(){\r",
+							"    pm.expect(pm.response.json().firstname).contain(name)\r",
 							"})"
 						],
 						"type": "text/javascript"
@@ -372,7 +392,16 @@
 							"\r",
 							"pm.test(\"Validar que el status response es igual a Method Not Allowed cuando se actualice un booking no existente.\",()=> {\r",
 							"    pm.response.to.have.status(\"Method Not Allowed\")\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que el tiempo de respuesta es menor a 1 seg\", ()=>{\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que el body no viene vacio\", function(){\r",
+							"    pm.expect(pm.response.body).not.equal(null);\r",
+							"    pm.expect(pm.response.body).not.to.be.null;\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
@@ -408,14 +437,14 @@
 					"raw": "{\r\n    \"firstname\" : \"James\",\r\n    \"lastname\" : \"Brown\",\r\n    \"totalprice\" : 111,\r\n    \"depositpaid\" : true,\r\n    \"bookingdates\" : {\r\n        \"checkin\" : \"2018-01-01\",\r\n        \"checkout\" : \"2019-01-01\"\r\n    },\r\n    \"additionalneeds\" : \"Breakfast\"\r\n}"
 				},
 				"url": {
-					"raw": "https://{{url_base}}/booking/34566",
+					"raw": "https://{{url_base}}/booking/2312312312213123",
 					"protocol": "https",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"booking",
-						"34566"
+						"2312312312213123"
 					]
 				}
 			},
@@ -543,13 +572,29 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Validar que el código de respuesta es un 405 cuando se elimine un booking no existente.\",function(){\r",
+							"//Prueba para validar el código de respuesta\r",
+							"pm.test(\"Validar que el código de respuesta es un 405.\",function(){\r",
 							"\tpm.expect(pm.response.code).to.eql(405);\r",
 							"});\r",
 							"\r",
-							"pm.test(\"Validar que el status response es igual a Method Not Allowed cuando se elimine un booking no existente.\",()=> {\r",
+							"//Prueba para validar el código de respuesta\r",
+							"pm.test(\"Validar que el status code response es un 405.\",function(){\r",
+							"    pm.response.to.have.status(405)\r",
+							"});\r",
+							"\r",
+							"//Prueba para validar el estado de respuesta\r",
+							"pm.test(\"Validar que el status response es igual a Method Not Allowed.\",()=> {\r",
 							"    pm.response.to.have.status(\"Method Not Allowed\")\r",
-							"});"
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que el tiempo de respuesta es menor a 1 seg\", ()=>{\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000)\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que el body no viene vacio\", function(){\r",
+							"    pm.expect(pm.response.body).not.equal(null);\r",
+							"    pm.expect(pm.response.body).not.to.be.null;\r",
+							"})"
 						],
 						"type": "text/javascript"
 					}
@@ -597,6 +642,15 @@
 							"//Prueba para validar el estado de respuesta\r",
 							"pm.test(\"Validar que el status response es igual a Not Found cuando se consulta un booking No existente..\",()=> {\r",
 							"    pm.response.to.have.status(\"Not Found\")\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Validar que el body no viene vacio\", function(){\r",
+							"    pm.expect(pm.response.body).not.equal(null);\r",
+							"    pm.expect(pm.response.body).not.to.be.null;\r",
+							"})\r",
+							"\r",
+							"pm.test(\"Validar que el tiempo de respuesta es menor a 1 seg\", ()=>{\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(1000)\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -607,14 +661,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://{{url_base}}/booking/12112",
+					"raw": "https://{{url_base}}/booking/121124",
 					"protocol": "https",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"booking",
-						"12112"
+						"121124"
 					]
 				}
 			},
