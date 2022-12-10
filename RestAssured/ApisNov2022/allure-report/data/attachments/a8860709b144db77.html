@@ -1,0 +1,35 @@
+<div>PATCH to https://webapi.segundamano.mx/nga/api/v1/private/accounts/23423</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;account&quot;: {
+        &quot;name&quot;: &quot;Blake Legros&quot;,
+        &quot;phone&quot;: &quot; 2345781823 &quot;,
+        &quot;professional&quot;: true,
+        &quot;phone_hidden&quot;: true
+    }
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: tag:scmcoord.com,2013:api mc1xa107bc8272620b9f6c813b2808fc7dba4220e05f_v2</div>
+        <div>Accept: */*</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X PATCH &#39;https://webapi.segundamano.mx/nga/api/v1/private/accounts/23423&#39; -H &#39;Authorization: tag:scmcoord.com,2013:api mc1xa107bc8272620b9f6c813b2808fc7dba4220e05f_v2&#39; -H &#39;Accept: */*&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;account&quot;: {
+        &quot;name&quot;: &quot;Blake Legros&quot;,
+        &quot;phone&quot;: &quot; 2345781823 &quot;,
+        &quot;professional&quot;: true,
+        &quot;phone_hidden&quot;: true
+    }
+}&#39;
+</div>
