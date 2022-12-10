@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="eCommerce" tests="17" skipped="0" failures="0" errors="0" timestamp="2022-12-10T21:51:13" hostname="LAPTOP-BS5MJ7K4" time="54.353">
+<testsuite name="eCommerce" tests="17" skipped="0" failures="0" errors="0" timestamp="2022-12-10T21:56:25" hostname="LAPTOP-BS5MJ7K4" time="52.748">
   <properties/>
-  <testcase name="Test case: Crear un anuncio." classname="eCommerce" time="7.091"/>
-  <testcase name="Test case:Eliminar una direcciÃ³n." classname="eCommerce" time="4.249"/>
-  <testcase name="Test case: Obtener listado  de categorias." classname="eCommerce" time="0.359"/>
-  <testcase name="Test case: Validar el filtrado de categorias." classname="eCommerce" time="0.324"/>
-  <testcase name="Test case: Crear una direcciÃ³n." classname="eCommerce" time="1.604"/>
-  <testcase name="Test case: Crear un usuario." classname="eCommerce" time="1.016"/>
-  <testcase name="Test case: Eliminar un anuncio sin autorizaciÃ³n." classname="eCommerce" time="5.314"/>
-  <testcase name="Test case: Ver anuncio despuÃ©s de la creaciÃ³n." classname="eCommerce" time="4.956"/>
-  <testcase name="Test case: Ver anuncio despuÃ©s de la ediciÃ³n." classname="eCommerce" time="7.824"/>
-  <testcase name="Test case: Editar una direcciÃ³n existente." classname="eCommerce" time="3.399"/>
-  <testcase name="Test case: Editar un usuario No Existente." classname="eCommerce" time="2.309"/>
-  <testcase name="Test case: Editar un anuncio existente." classname="eCommerce" time="6.912"/>
-  <testcase name="Test case: Editar una direcciÃ³n no existente." classname="eCommerce" time="1.89"/>
-  <testcase name="Test case: Obtener informacion del usuario." classname="eCommerce" time="0.924"/>
-  <testcase name="Test case: Editar un usuario." classname="eCommerce" time="1.616"/>
-  <testcase name="Test case: Listado de anuncios." classname="eCommerce" time="0.231"/>
-  <testcase name="Test case: Consultar si el anuncio fue publicado ." classname="eCommerce" time="4.29"/>
+  <testcase name="Test case: Crear un anuncio." classname="eCommerce" time="5.577"/>
+  <testcase name="Test case:Eliminar una direcciÃ³n." classname="eCommerce" time="3.486"/>
+  <testcase name="Test case: Obtener listado  de categorias." classname="eCommerce" time="0.274"/>
+  <testcase name="Test case: Validar el filtrado de categorias." classname="eCommerce" time="0.218"/>
+  <testcase name="Test case: Crear una direcciÃ³n." classname="eCommerce" time="2.428"/>
+  <testcase name="Test case: Crear un usuario." classname="eCommerce" time="1.037"/>
+  <testcase name="Test case: Eliminar un anuncio sin autorizaciÃ³n." classname="eCommerce" time="6.119"/>
+  <testcase name="Test case: Ver anuncio despuÃ©s de la creaciÃ³n." classname="eCommerce" time="3.96"/>
+  <testcase name="Test case: Ver anuncio despuÃ©s de la ediciÃ³n." classname="eCommerce" time="7.883"/>
+  <testcase name="Test case: Editar una direcciÃ³n existente." classname="eCommerce" time="3.566"/>
+  <testcase name="Test case: Editar un usuario No Existente." classname="eCommerce" time="1.192"/>
+  <testcase name="Test case: Editar un anuncio existente." classname="eCommerce" time="6.288"/>
+  <testcase name="Test case: Editar una direcciÃ³n no existente." classname="eCommerce" time="2.058"/>
+  <testcase name="Test case: Obtener informacion del usuario." classname="eCommerce" time="1.687"/>
+  <testcase name="Test case: Editar un usuario." classname="eCommerce" time="1.939"/>
+  <testcase name="Test case: Listado de anuncios." classname="eCommerce" time="0.395"/>
+  <testcase name="Test case: Consultar si el anuncio fue publicado ." classname="eCommerce" time="4.594"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -37,7 +37,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x178324b3ddd7a359a8e960fe6cf6109c980a5bb0_v2
+Token en la prueba crear anuncio mc1xa470900eb007e25e766155e92c6d0eb98d858e0d_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -47,7 +47,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxNzgzMjRiM2RkZDdhMzU5YThlOTYwZmU2Y2Y2MTA5Yzk4MGE1YmIwX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhhNDcwOTAwZWIwMDdlMjVlNzY2MTU1ZTkyYzZkMGViOThkODU4ZTBkX3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -69,7 +69,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091030",
+            "ad_id": "75091049",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -127,10 +127,10 @@ Body:
                     "most_popular": false,
                     "active": true,
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 },
                 {
@@ -147,10 +147,10 @@ Body:
                         "name": "RECOMENDADO"
                     },
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 }
             ]
@@ -158,7 +158,7 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 2834
+Tiempo respuesta: 2720
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -202,7 +202,7 @@ Request URI:	https://webapi.segundamano.mx/addresses/v1/create
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	contact=Marshall Brekke
+Form params:	contact=Lakendra Terry
 				phone=9878675654
 				rfc=XAXX010101000
 				zipCode=11011
@@ -214,35 +214,35 @@ Form params:	contact=Marshall Brekke
 				alias=La casa test
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgwMmE0NGI0MzE5MDUwZDlmM2ExM2JhZGViNTg0NDcwMzFiNzU4MGFlX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgzYmRmODVkMmY3MWNmZWRmMzMyNDY2ZDU3NGRkMzRkNjRjNDZkYzNiX3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "addressID": "ca835caa-78d4-11ed-bc5c-e3058dd37de1"
+    "addressID": "82dcd358-78d5-11ed-bb2c-476777bcb144"
 }
 status response: 201
-Tiempo respuesta: 328
-ca835caa-78d4-11ed-bc5c-e3058dd37de1
+Tiempo respuesta: 325
+82dcd358-78d5-11ed-bb2c-476777bcb144
 Request method:	DELETE
-Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/ca835caa-78d4-11ed-bc5c-e3058dd37de1
+Request URI:	https://webapi.segundamano.mx/addresses/v1/delete/82dcd358-78d5-11ed-bb2c-476777bcb144
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgzOTYwOGQ3YWQwMWMxZTU4YTdhZTRiOGE2NGZiMzRjN2VlN2RhMDllX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxYmNjOTdiZmU4ZDc2Y2RmNjEwMGJiOWRmOWQxODhlOGM3YmU2ODE5X3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "message": "ca835caa-78d4-11ed-bc5c-e3058dd37de1 deleted correctly"
+    "message": "82dcd358-78d5-11ed-bb2c-476777bcb144 deleted correctly"
 }
 status response: 200
-Tiempo respuesta: 372
+Tiempo respuesta: 436
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/public/categories/filter?lang=es
 Proxy:			<none>
@@ -4061,7 +4061,7 @@ Response: {
     ]
 }
 status response: 200
-Tiempo respuesta: 256
+Tiempo respuesta: 147
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/urls/v1/public/ad-listing?lang=es
 Proxy:			<none>
@@ -4121,7 +4121,7 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 262
+Tiempo respuesta: 171
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4146,7 +4146,7 @@ Request URI:	https://webapi.segundamano.mx/addresses/v1/create
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	contact=Mr. Emilio Abernathy
+Form params:	contact=Hulda Doyle
 				phone=9878675654
 				rfc=XAXX010101000
 				zipCode=11011
@@ -4158,17 +4158,17 @@ Form params:	contact=Mr. Emilio Abernathy
 				alias=La casa test
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg2OTIxYWM1ZGE2NTA3NThlNGM3ZDE5YmNiOTI3ZGNkMDc0NzUzYWVlX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg1ZDc3NjVlMjQzNjhhZjE3NThhM2QzYjA0YzUyNzhmNTVjNzdmOTA2X3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "addressID": "ca835caa-78d4-11ed-bc5c-e3058dd37de1"
+    "addressID": "82dcd358-78d5-11ed-bb2c-476777bcb144"
 }
 status response: 201
-Tiempo respuesta: 470
-ca835caa-78d4-11ed-bc5c-e3058dd37de1
+Tiempo respuesta: 734
+82dcd358-78d5-11ed-bb2c-476777bcb144
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4176,7 +4176,7 @@ Request params:	<none>
 Query params:	lang=es
 Form params:	<none>
 Path params:	<none>
-Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhc190ZXN0MTk4NS4wQG1haWxpbmF0b3IuY29tOjEyMzQ1
+Headers:		Authorization=Basic YWdlbnRlX3ZlbnRhc190ZXN0NDI3Ni4wQG1haWxpbmF0b3IuY29tOjEyMzQ1
 				Accept=*/*
 				Content-Type=application/json
 Cookies:		<none>
@@ -4184,7 +4184,7 @@ Multiparts:		<none>
 Body:
 {
     "account": {
-        "email": "agente_ventas_test1985.0@mailinator.com"
+        "email": "agente_ventas_test4276.0@mailinator.com"
     }
 }
 {
@@ -4198,7 +4198,7 @@ Response: {
     }
 }
 status response: 401
-Tiempo respuesta: 996
+Tiempo respuesta: 1003
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4218,7 +4218,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x75a315e762c382671378dcb4f26d1820a9ef6dd6_v2
+Token en la prueba crear anuncio mc1xdceb28f4d0c8c31d9186fa3a1289a727897431f6_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -4228,7 +4228,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg3NWEzMTVlNzYyYzM4MjY3MTM3OGRjYjRmMjZkMTgyMGE5ZWY2ZGQ2X3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhkY2ViMjhmNGQwYzhjMzFkOTE4NmZhM2ExMjg5YTcyNzg5NzQzMWY2X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -4250,7 +4250,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091031",
+            "ad_id": "75091051",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -4308,10 +4308,10 @@ Body:
                     "most_popular": false,
                     "active": true,
                     "payment_methods": [
-                        "pay_method_paypal",
-                        "pay_method_oxxo",
                         "pay_method_credit",
-                        "pay_method_points"
+                        "pay_method_points",
+                        "pay_method_oxxo",
+                        "pay_method_paypal"
                     ]
                 },
                 {
@@ -4328,10 +4328,10 @@ Body:
                         "name": "RECOMENDADO"
                     },
                     "payment_methods": [
-                        "pay_method_paypal",
-                        "pay_method_oxxo",
                         "pay_method_credit",
-                        "pay_method_points"
+                        "pay_method_points",
+                        "pay_method_oxxo",
+                        "pay_method_paypal"
                     ]
                 }
             ]
@@ -4339,7 +4339,7 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 2796
+Tiempo respuesta: 2918
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4360,14 +4360,14 @@ Body:
 }
 Account_ID: /private/accounts/12788464
 Request method:	DELETE
-Request URI:	https://webapi.segundamano.mx/nga/api/v1%2F%2Fprivate/accounts/12788464/klfst/75091031
+Request URI:	https://webapi.segundamano.mx/nga/api/v1%2F%2Fprivate/accounts/12788464/klfst/75091051
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic YWdlbnRlX3ZlbnRhc190ZXN0Mjc0NS4wQG1haWxpbmF0b3IuY29tOjEyMzQ1
+				Authorization=Basic YWdlbnRlX3ZlbnRhc190ZXN0Njc0MS4wQG1haWxpbmF0b3IuY29tOjEyMzQ1
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -4388,7 +4388,7 @@ Response: {
     }
 }
 status response: 401
-Tiempo respuesta: 150
+Tiempo respuesta: 147
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4408,7 +4408,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x8689c5e2d6d78ad768659d1aea914f700d2e4e69_v2
+Token en la prueba crear anuncio mc1x9551f6f69a0ae9e743857dfa55f7db8cf7cac317_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -4418,7 +4418,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg4Njg5YzVlMmQ2ZDc4YWQ3Njg2NTlkMWFlYTkxNGY3MDBkMmU0ZTY5X3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg5NTUxZjZmNjlhMGFlOWU3NDM4NTdkZmE1NWY3ZGI4Y2Y3Y2FjMzE3X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -4440,7 +4440,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091032",
+            "ad_id": "75091052",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -4498,10 +4498,10 @@ Body:
                     "most_popular": false,
                     "active": true,
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 },
                 {
@@ -4518,10 +4518,10 @@ Body:
                         "name": "RECOMENDADO"
                     },
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 }
             ]
@@ -4529,9 +4529,9 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 2958
+Tiempo respuesta: 2925
 Request method:	GET
-Request URI:	https://webapi.segundamano.mx/ad-stats/v1/public/accounts/12788464/ads/75091032
+Request URI:	https://webapi.segundamano.mx/ad-stats/v1/public/accounts/12788464/ads/75091052
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -4542,7 +4542,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "list_id": "75091032",
+    "list_id": "75091052",
     "total": {
         "change": {
             "views": 0,
@@ -4557,7 +4557,7 @@ Body:			<none>
     }
 }
 Response: {
-    "list_id": "75091032",
+    "list_id": "75091052",
     "total": {
         "change": {
             "views": 0,
@@ -4572,8 +4572,8 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 570
-75091032
+Tiempo respuesta: 310
+75091052
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4593,7 +4593,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x98d4f788c11b419a880768d7b89dbefd5fe97b20_v2
+Token en la prueba crear anuncio mc1xfaba139b5c2d9672d441a001d16807c77e4d03fa_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -4603,7 +4603,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg5OGQ0Zjc4OGMxMWI0MTlhODgwNzY4ZDdiODlkYmVmZDVmZTk3YjIwX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhmYWJhMTM5YjVjMmQ5NjcyZDQ0MWEwMDFkMTY4MDdjNzdlNGQwM2ZhX3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -4625,7 +4625,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091033",
+            "ad_id": "75091053",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -4683,10 +4683,10 @@ Body:
                     "most_popular": false,
                     "active": true,
                     "payment_methods": [
-                        "pay_method_paypal",
-                        "pay_method_oxxo",
                         "pay_method_credit",
-                        "pay_method_points"
+                        "pay_method_points",
+                        "pay_method_oxxo",
+                        "pay_method_paypal"
                     ]
                 },
                 {
@@ -4703,10 +4703,10 @@ Body:
                         "name": "RECOMENDADO"
                     },
                     "payment_methods": [
-                        "pay_method_paypal",
-                        "pay_method_oxxo",
                         "pay_method_credit",
-                        "pay_method_points"
+                        "pay_method_points",
+                        "pay_method_oxxo",
+                        "pay_method_paypal"
                     ]
                 }
             ]
@@ -4714,9 +4714,9 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 2876
+Tiempo respuesta: 2957
 Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up/75091033
+Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up/75091053
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -4724,7 +4724,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg5OGQ0Zjc4OGMxMWI0MTlhODgwNzY4ZDdiODlkYmVmZDVmZTk3YjIwX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhmYWJhMTM5YjVjMmQ5NjcyZDQ0MWEwMDFkMTY4MDdjNzdlNGQwM2ZhX3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -4738,7 +4738,7 @@ Body:
     "region": "12",
     "municipality": "323",
     "area": "42205",
-    "price": "806",
+    "price": "152",
     "phone_hidden": "true",
     "show_phone": "false",
     "contact_phone": "408-859-6668"
@@ -4746,7 +4746,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091033",
+            "ad_id": "75091053",
             "subject": "Organizamos compra de estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -4770,7 +4770,7 @@ Body:
             },
             "price": {
                 "currency": "MXN",
-                "value": 806
+                "value": 152
             },
             "thumbnail": {
                 "base_url": "https://img.segundamano.mx",
@@ -4782,7 +4782,7 @@ Body:
 Response: {
     "data": {
         "ad": {
-            "ad_id": "75091033",
+            "ad_id": "75091053",
             "subject": "Organizamos compra de estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -4806,7 +4806,7 @@ Response: {
             },
             "price": {
                 "currency": "MXN",
-                "value": 806
+                "value": 152
             },
             "thumbnail": {
                 "base_url": "https://img.segundamano.mx",
@@ -4816,9 +4816,9 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 2928
+Tiempo respuesta: 2972
 Request method:	GET
-Request URI:	https://webapi.segundamano.mx/ad-stats/v1/public/accounts/12788464/ads/75091033
+Request URI:	https://webapi.segundamano.mx/ad-stats/v1/public/accounts/12788464/ads/75091053
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -4829,7 +4829,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "list_id": "75091033",
+    "list_id": "75091053",
     "total": {
         "change": {
             "views": 0,
@@ -4844,7 +4844,7 @@ Body:			<none>
     }
 }
 Response: {
-    "list_id": "75091033",
+    "list_id": "75091053",
     "total": {
         "change": {
             "views": 0,
@@ -4859,8 +4859,8 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 257
-75091033
+Tiempo respuesta: 238
+75091053
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4904,7 +4904,7 @@ Request URI:	https://webapi.segundamano.mx/addresses/v1/create
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	contact=Mrs. Ike Murazik
+Form params:	contact=Mrs. Migdalia Jenkins
 				phone=9878675654
 				rfc=XAXX010101000
 				zipCode=11011
@@ -4916,44 +4916,44 @@ Form params:	contact=Mrs. Ike Murazik
 				alias=La casa test
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhiMTk2NGE0ZDY0NjM1YTk5MDZmNzhkNmIwYTMyMTg0OWJmOTUyOGEzX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxNDBhZDU4NTI2ODA0NTk1ZjRlNzc0MzBjNGM2YWVmNGU3OWJlNzJkX3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "addressID": "d96126c6-78d4-11ed-926d-67abe3fb2f23"
+    "addressID": "923cd2e4-78d5-11ed-bb2c-7351f682acb6"
 }
 status response: 201
-Tiempo respuesta: 154
-d96126c6-78d4-11ed-926d-67abe3fb2f23
+Tiempo respuesta: 314
+923cd2e4-78d5-11ed-bb2c-7351f682acb6
 Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/d96126c6-78d4-11ed-926d-67abe3fb2f23
+Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/923cd2e4-78d5-11ed-bb2c-7351f682acb6
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	contact=Winifred Dach
+Form params:	contact=Reena Ruecker
 				phone=9878675654
 				rfc=XAXX010101000
 				zipCode=11011
 				exteriorInfo=Morelia 4567
-				interiorInfo=218
+				interiorInfo=440
 				region=11
 				municipality=300
 				area=8082
 				alias=La casa test
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg5NDMyYmNmZThiMTVmNjI4NDZmYjRmNjIzOTBmMzc5NWJhMWEwNGU3X3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXhmMDYzMGVmZmEzOWQ4NmEzN2RjZDc0Yjk2MmY2NDY2M2Y3OTcxNTdiX3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 {
-    "message": "d96126c6-78d4-11ed-926d-67abe3fb2f23 modified correctly"
+    "message": "923cd2e4-78d5-11ed-bb2c-7351f682acb6 modified correctly"
 }
 status response: 200
-Tiempo respuesta: 279
+Tiempo respuesta: 152
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -4981,17 +4981,17 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=tag:scmcoord.com,2013:api mc1xa107bc8272620b9f6c813b2808fc7dba4220e05f_v2
+				Authorization=tag:scmcoord.com,2013:api mc1xead6ce619c143dc5c2dd6c8733f97062e4873b43_v2
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "account": {
-        "name": "Blake Legros",
+        "name": "Mrs. Tanner Dietrich",
         "phone": " 2345781823 ",
-        "professional": true,
-        "phone_hidden": true
+        "professional": false,
+        "phone_hidden": false
     }
 }
 {
@@ -5000,7 +5000,7 @@ Body:
     }
 }
 status response: 403
-Tiempo respuesta: 846
+Tiempo respuesta: 512
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -5020,7 +5020,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x1d3967ebb0035d15adcaf4a0e14349cc76f5c983_v2
+Token en la prueba crear anuncio mc1x1667db42c963cc172e8e2877935c0c97d75f9597_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -5030,7 +5030,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxZDM5NjdlYmIwMDM1ZDE1YWRjYWY0YTBlMTQzNDljYzc2ZjVjOTgzX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxNjY3ZGI0MmM5NjNjYzE3MmU4ZTI4Nzc5MzVjMGM5N2Q3NWY5NTk3X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -5052,7 +5052,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091036",
+            "ad_id": "75091056",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -5110,10 +5110,10 @@ Body:
                     "most_popular": false,
                     "active": true,
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 },
                 {
@@ -5130,10 +5130,10 @@ Body:
                         "name": "RECOMENDADO"
                     },
                     "payment_methods": [
-                        "pay_method_credit",
-                        "pay_method_points",
+                        "pay_method_paypal",
                         "pay_method_oxxo",
-                        "pay_method_paypal"
+                        "pay_method_credit",
+                        "pay_method_points"
                     ]
                 }
             ]
@@ -5141,9 +5141,9 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 3269
+Tiempo respuesta: 2667
 Request method:	PUT
-Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up/75091036
+Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up/75091056
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
@@ -5151,7 +5151,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxZDM5NjdlYmIwMDM1ZDE1YWRjYWY0YTBlMTQzNDljYzc2ZjVjOTgzX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgxNjY3ZGI0MmM5NjNjYzE3MmU4ZTI4Nzc5MzVjMGM5N2Q3NWY5NTk3X3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -5165,7 +5165,7 @@ Body:
     "region": "12",
     "municipality": "323",
     "area": "42205",
-    "price": "329",
+    "price": "442",
     "phone_hidden": "true",
     "show_phone": "false",
     "contact_phone": "408-859-6668"
@@ -5173,7 +5173,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091036",
+            "ad_id": "75091056",
             "subject": "Organizamos compra de estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -5197,7 +5197,7 @@ Body:
             },
             "price": {
                 "currency": "MXN",
-                "value": 329
+                "value": 442
             },
             "thumbnail": {
                 "base_url": "https://img.segundamano.mx",
@@ -5209,7 +5209,7 @@ Body:
 Response: {
     "data": {
         "ad": {
-            "ad_id": "75091036",
+            "ad_id": "75091056",
             "subject": "Organizamos compra de estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -5233,7 +5233,7 @@ Response: {
             },
             "price": {
                 "currency": "MXN",
-                "value": 329
+                "value": 442
             },
             "thumbnail": {
                 "base_url": "https://img.segundamano.mx",
@@ -5243,7 +5243,7 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 2919
+Tiempo respuesta: 2883
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -5268,19 +5268,19 @@ Request URI:	https://webapi.segundamano.mx/addresses/v1/modify/232
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
-Form params:	contact=Tanner Dicki
+Form params:	contact=Jacelyn Strosin
 				phone=9878675654
 				rfc=XAXX010101000
 				zipCode=11011
 				exteriorInfo=Morelia 4567
-				interiorInfo=342
+				interiorInfo=316
 				region=11
 				municipality=300
 				area=8082
 				alias=La casa test
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg3ZmNmYjQ5YmE4YWVmYTk3ZmExNjYyOWMzYmE2ZGJiZjQ3ZDczMmUyX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXgwNGU0YWNjZDBmNjVkOWFkMDU4ZDExNWE0OGU3ZjU1MTVlMmQ2ZjJlX3Yy
 				Content-Type=application/x-www-form-urlencoded; charset=ISO-8859-1
 Cookies:		<none>
 Multiparts:		<none>
@@ -5289,7 +5289,7 @@ Body:			<none>
     "error": "Error during update: can't find the address to update: pq: invalid input syntax for uuid: \"232\""
 }
 status response: 400
-Tiempo respuesta: 315
+Tiempo respuesta: 322
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1/private/accounts?lang=es
 Proxy:			<none>
@@ -5309,7 +5309,7 @@ Body:
     }
 }
 {
-    "access_token": "mc1x4894b0f4ef47b8e8dfdd759641b4ff5d345de3fe_v2",
+    "access_token": "mc1xe8326ad8582a879e7cf742dc7128e67bab49d483_v2",
     "account": {
         "account_id": "/private/accounts/12788464",
         "can_publish": true,
@@ -5318,10 +5318,10 @@ Body:
         "locations": [
             
         ],
-        "name": "Candance Harris",
+        "name": "Leroy Lubowitz Sr.",
         "phone": " 2345781823 ",
-        "phone_hidden": true,
-        "professional": true,
+        "phone_hidden": false,
+        "professional": false,
         "rfc": "XAXX010101000",
         "uuid": "f84283fa-cee3-4b19-9b13-15c784694a64"
     },
@@ -5351,7 +5351,7 @@ Body:
     "token_type": "tag:scmcoord.com,2013:api"
 }
 Response: {
-    "access_token": "mc1x4894b0f4ef47b8e8dfdd759641b4ff5d345de3fe_v2",
+    "access_token": "mc1xe8326ad8582a879e7cf742dc7128e67bab49d483_v2",
     "account": {
         "account_id": "/private/accounts/12788464",
         "can_publish": true,
@@ -5360,10 +5360,10 @@ Response: {
         "locations": [
             
         ],
-        "name": "Candance Harris",
+        "name": "Leroy Lubowitz Sr.",
         "phone": " 2345781823 ",
-        "phone_hidden": true,
-        "professional": true,
+        "phone_hidden": false,
+        "professional": false,
         "rfc": "XAXX010101000",
         "uuid": "f84283fa-cee3-4b19-9b13-15c784694a64"
     },
@@ -5393,8 +5393,8 @@ Response: {
     "token_type": "tag:scmcoord.com,2013:api"
 }
 status response: 200
-Tiempo respuesta: 882
-Token: mc1x4894b0f4ef47b8e8dfdd759641b4ff5d345de3fe_v2
+Tiempo respuesta: 1627
+Token: mc1xe8326ad8582a879e7cf742dc7128e67bab49d483_v2
 Account_ID: /private/accounts/12788464
 uuid: f84283fa-cee3-4b19-9b13-15c784694a64
 Request method:	POST
@@ -5424,17 +5424,17 @@ Query params:	<none>
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
-				Authorization=tag:scmcoord.com,2013:api mc1x90be707e06fab0bce18602e96fedb04b2a86c6e2_v2
+				Authorization=tag:scmcoord.com,2013:api mc1x51ba99865cd80ccf2e2020c2d19c1691e3fb1b29_v2
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
     "account": {
-        "name": "Leroy Lubowitz Sr.",
+        "name": "Melina Klocko",
         "phone": " 2345781823 ",
-        "professional": false,
-        "phone_hidden": false
+        "professional": true,
+        "phone_hidden": true
     }
 }
 {
@@ -5446,16 +5446,16 @@ Body:
         "locations": [
             
         ],
-        "name": "Leroy Lubowitz Sr.",
+        "name": "Melina Klocko",
         "phone": " 2345781823 ",
-        "phone_hidden": false,
-        "professional": false,
+        "phone_hidden": true,
+        "professional": true,
         "rfc": "XAXX010101000",
         "uuid": "f84283fa-cee3-4b19-9b13-15c784694a64"
     }
 }
 status response: 200
-Tiempo respuesta: 799
+Tiempo respuesta: 736
 Request method:	GET
 Request URI:	https://webapi.segundamano.mx/highlights/v1/public/highlights?prio=1&cat=1100&lim=16
 Proxy:			<none>
@@ -6730,7 +6730,7 @@ Response: {
     }
 }
 status response: 200
-Tiempo respuesta: 207
+Tiempo respuesta: 367
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/nga/api/v1.1/private/accounts?lang=es
 Proxy:			<none>
@@ -6750,7 +6750,7 @@ Body:
     }
 }
 Account_ID: /private/accounts/12788464
-Token en la prueba crear anuncio mc1x7baf212a698db8a8f9900eb9cea7c00f9c1ee342_v2
+Token en la prueba crear anuncio mc1x7f12bc37492ae23d08d65bfc70d2cca4ff72bfe0_v2
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/v2/accounts/f84283fa-cee3-4b19-9b13-15c784694a64/up
 Proxy:			<none>
@@ -6760,7 +6760,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		x-source=PHOENIX_DESKTOP
 				Accept=*/*
-				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg3YmFmMjEyYTY5OGRiOGE4Zjk5MDBlYjljZWE3YzAwZjljMWVlMzQyX3Yy
+				Authorization=Basic Zjg0MjgzZmEtY2VlMy00YjE5LTliMTMtMTVjNzg0Njk0YTY0Om1jMXg3ZjEyYmMzNzQ5MmFlMjNkMDhkNjViZmM3MGQyY2NhNGZmNzJiZmUwX3Yy
 				Content-Type=application/json
 Cookies:		<none>
 Multiparts:		<none>
@@ -6782,7 +6782,7 @@ Body:
 {
     "data": {
         "ad": {
-            "ad_id": "75091037",
+            "ad_id": "75091057",
             "subject": "Tasty compro estampillas para colecciÃ³n",
             "category": {
                 "code": "4100",
@@ -6871,7 +6871,7 @@ Body:
     }
 }
 status response: 200
-Tiempo respuesta: 3251
+Tiempo respuesta: 2690
 Request method:	POST
 Request URI:	https://webapi.segundamano.mx/urls/v1/public/ad-view?lang=es
 Proxy:			<none>
@@ -6886,7 +6886,7 @@ Multiparts:		<none>
 Body:
 {
     "ids": [
-        "75091037"
+        "75091057"
     ]
 }
 {
@@ -6896,7 +6896,7 @@ Body:
         },
         "errors": {
             "NotFound": [
-                "75091037"
+                "75091057"
             ]
         }
     }
@@ -6908,13 +6908,13 @@ Response: {
         },
         "errors": {
             "NotFound": [
-                "75091037"
+                "75091057"
             ]
         }
     }
 }
 status response: 200
-Tiempo respuesta: 311
+Tiempo respuesta: 237
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
