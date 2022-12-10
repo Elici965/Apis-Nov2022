@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "dbde72ca-8aef-4cc4-b478-477762e91cbc",
+		"_postman_id": "f92054ad-ea02-4144-bffb-a588d1ac1d71",
 		"name": "Practica 5 - Ecommerce",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "3830516"
@@ -443,14 +443,14 @@
 			"response": []
 		},
 		{
-			"name": "EditarUsuarioNoExistente - 405",
+			"name": "EditarUsuarioNoExistente - 403",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Validar el código de respuesta sea igual a 405.\", function(){\r",
-							"    pm.expect(pm.response.code).to.eql(405)\r",
+							"pm.test(\"Validar el código de respuesta sea igual a 403.\", function(){\r",
+							"    pm.expect(pm.response.code).to.eql(403)\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Validar que el tiempo de respuesta es menor a 1 seg\", function(){\r",
@@ -462,8 +462,9 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Validar que el campo token retorna un campo tipo String\", ()=>{\r",
-							"    pm.expect(pm.response.text()).to.include('error')\r",
-							"});"
+							"    pm.expect(pm.response.text()).to.include('FORBIDDEN')\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -510,7 +511,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://{{url_base}}/nga/api/v1/3?lang=es",
+					"raw": "https://{{url_base}}/nga/api/v1/private/accounts/23423",
 					"protocol": "https",
 					"host": [
 						"{{url_base}}"
@@ -519,13 +520,9 @@
 						"nga",
 						"api",
 						"v1",
-						"3"
-					],
-					"query": [
-						{
-							"key": "lang",
-							"value": "es"
-						}
+						"private",
+						"accounts",
+						"23423"
 					]
 				}
 			},
@@ -939,14 +936,14 @@
 			"response": []
 		},
 		{
-			"name": "EliminarAnuncioFORBIDDEN - 403",
+			"name": "EliminarAnuncioSinAutorizacion - 401",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Validar el código de respuesta sea igual a 403\", function(){\r",
-							"    pm.expect(pm.response.code).to.eql(403)\r",
+							"pm.test(\"Validar el código de respuesta sea igual a 401\", function(){\r",
+							"    pm.expect(pm.response.code).to.eql(401)\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Validar que el tiempo de respuesta es menor a 1 seg\", function(){\r",
@@ -958,7 +955,7 @@
 							"});\r",
 							"\r",
 							"pm.test(\"Validar que el response contenga FORBIDDEN.\", function(){\r",
-							"    pm.expect(pm.response.text()).contain(\"FORBIDDEN\")\r",
+							"    pm.expect(pm.response.text()).contain(\"UNAUTHORIZED\")\r",
 							"});"
 						],
 						"type": "text/javascript"
@@ -971,6 +968,21 @@
 				}
 			},
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "{{email}}",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}",
+							"type": "string"
+						}
+					]
+				},
 				"method": "DELETE",
 				"header": [
 					{
@@ -982,19 +994,19 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
-					},
-					{
-						"key": "Cache-Control",
-						"value": "no-cache",
-						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"delete_reason:\"{\r\n        \"code\": \"2\"\r\n    }\r\n}"
+					"raw": "{\r\n    \"delete_reason:\"{\r\n        \"code\": \"2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
 				"url": {
-					"raw": "https://{{url_base}}/nga/api/v1/{{account_id}}klfst/{{ad_id}}",
+					"raw": "https://{{url_base}}/nga/api/v1/{{account_id}}/klfst/{{ad_id}}",
 					"protocol": "https",
 					"host": [
 						"{{url_base}}"
@@ -1003,7 +1015,8 @@
 						"nga",
 						"api",
 						"v1",
-						"{{account_id}}klfst",
+						"{{account_id}}",
+						"klfst",
 						"{{ad_id}}"
 					]
 				}
